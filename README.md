@@ -4,7 +4,6 @@ Get a  SECRET_KEY from https://djecrety.ir/ , and put it inside `SECRET_KEY` var
 
 install react in `frontend` folder with this command : `npm install react`
 
-As for backend side, the venv folder is already inside the project folder and it has all modules installed, so when you want to run the webserver be sure to activate virtual-env,by doing the following: `path/to/project_folder/backend venv\Scripts\activate` to activate the virtual env
 
 
 (OPTIONAL) Remember to create an admin account in Django, following this steps:
