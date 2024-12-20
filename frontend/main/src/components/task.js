@@ -328,6 +328,7 @@ export default function Todo() {
   const [selected,setSelected] = useState('c2')
   const [todoList, setTodoList] = useState([]);
   const [type, setType] = useState("text");
+  const [update,setUpdate] = useState(0)
 
   const [empty,setEmpty] = useState(false)
  
@@ -514,7 +515,7 @@ export default function Todo() {
             <span>Task Queue</span>
           </h2>
     
-          <TaskQMemo isTodoPage={false} update={null} setUpdate={null} setTodoList = {setTodoList} setSelected={setSelected} selected={selected} range={range} dateFormat={dateFormat} todoList={todoList}></TaskQMemo>
+          <TaskQMemo isTodoPage={false} update={0} setUpdate={setUpdate} setTodoList = {setTodoList} setSelected={setSelected} selected={selected} range={range} dateFormat={dateFormat} todoList={todoList}></TaskQMemo>
         </div>
       </div>
     </div>

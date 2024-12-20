@@ -72,7 +72,8 @@ function TodoPage(){
             console.log(e.response.data)
             setTodoList(e.response.data)
         })
-    },[statusSelect,date,update])
+    },[statusSelect,date,update,todoList.title])
+
 
 
     function makeSelection(id){
