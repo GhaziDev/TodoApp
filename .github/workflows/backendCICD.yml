@@ -8,7 +8,7 @@ jobs:
     - name: logging pwd
       run: pwd
     - name: logging directory list
-      run: ls
+      run: ls -l
     - name: Todo Test Cases
       run: python manage.py test | cd backend
     - name: logging test
