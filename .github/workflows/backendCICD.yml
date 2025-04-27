@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: logging pwd
-      run: echo pwd
+      run: pwd
     - name: Todo Test Cases
       run: python manage.py test | cd backend
     - name: logging test
