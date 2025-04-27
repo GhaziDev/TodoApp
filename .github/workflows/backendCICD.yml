@@ -12,10 +12,13 @@ jobs:
 
     - name: Install Dependencies
       run: |
+        cd backend
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Todo Test Cases
-      run: python manage.py test | cd backend
+      run: |
+        cd backend
+        python manage.py test
     - name: logging test
       run: echo "Test Logging Succeeded"
    
