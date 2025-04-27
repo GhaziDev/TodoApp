@@ -2,7 +2,9 @@ from django.test import TestCase, Client
 
 from main import models
 
+
 from datetime import datetime
+import datetime
 
 from django.urls import reverse
 import json
@@ -12,6 +14,8 @@ from django.core import exceptions
 
 
 
+'''
+>>>>>>> 9090723778531a73ec299f9c2e361a66bb0bca98
 
 dict_ = {'title':'New title','desc':'New Desc','isCompleted':False,'isDeleted':False,'date':None,'color':'#c8fac8'}
 
@@ -19,8 +23,7 @@ dict_ = {'title':'New title','desc':'New Desc','isCompleted':False,'isDeleted':F
 
 '''
 
-TODO NEXT: Now, you need to control the database (models ORM) in a
-way so that no "past date" is allowed to be created for Todo model.
+
 
 '''
 
@@ -130,3 +133,20 @@ class AddMoreTasksTest(TestCase):
 
 
 # Create your tests here.
+<<<<<<< HEAD
+=======
+'''
+
+
+
+class TodoTest(TestCase):
+    def setUp(self):
+        todo = models.Todo.objects.create(published=datetime.datetime.now())
+        models.Task.objects.create(title='Title test',desc='description test',date=todo,color='#c8fac8')
+
+    def test_task_part_of_todo(self):
+        todo = models.Todo.objects.first()
+
+        self.assertEqual(todo,models.Task.objects.get(date=todo).date)
+        
+

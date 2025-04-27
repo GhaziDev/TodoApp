@@ -1,0 +1,11 @@
+name: backend
+on :
+  push:
+    branches: - main
+  pull_requests:
+    branches: - main
+jobs:
+  test:
+    run-on: ubuntu-latest
+    
+

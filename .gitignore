@@ -1,3 +1,5 @@
 /backend/venv
+/backend/main/migrations
 /frontend/main/node_modules
-/backend/virtual
+
+/backend/main/__pycache__
