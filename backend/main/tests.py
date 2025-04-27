@@ -2,6 +2,8 @@ from django.test import TestCase, Client
 
 from main import models
 
+
+from datetime import datetime
 import datetime
 
 from django.urls import reverse
@@ -13,12 +15,15 @@ from django.core import exceptions
 
 
 '''
+>>>>>>> 9090723778531a73ec299f9c2e361a66bb0bca98
 
 dict_ = {'title':'New title','desc':'New Desc','isCompleted':False,'isDeleted':False,'date':None,'color':'#c8fac8'}
 
 
 
 '''
+
+
 
 '''
 
@@ -128,6 +133,8 @@ class AddMoreTasksTest(TestCase):
 
 
 # Create your tests here.
+<<<<<<< HEAD
+=======
 '''
 
 
@@ -142,3 +149,4 @@ class TodoTest(TestCase):
 
         self.assertEqual(todo,models.Task.objects.get(date=todo).date)
         
+

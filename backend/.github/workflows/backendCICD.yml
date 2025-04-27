@@ -2,8 +2,8 @@ name: backend-Todo
 on: [push]
 
 jobs:
-  runs-on: ubuntu-latest
   test:
+    runs-on: ubuntu-latest
     steps:
     - name: Todo Test Cases
       run: python manage.py test
