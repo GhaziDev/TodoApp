@@ -9,4 +9,6 @@ jobs:
       run: python manage.py test | cd backend
     - name: logging test
       run: echo "Test Logging Succeeded"
+    - name: logging pwd
+      run: echo pwd
 
