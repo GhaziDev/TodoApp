@@ -8,7 +8,7 @@ jobs:
     - name: logging pwd
       run: pwd
     - name: logging directory list
-      run: ls -l
+      run: ls -la
 
     - name: Install Dependencies
       run: |
