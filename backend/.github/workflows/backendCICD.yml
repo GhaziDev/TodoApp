@@ -1,0 +1,12 @@
+name: backend-Todo
+on: [push]
+
+jobs:
+  runs-on: ubuntu-latest
+  test:
+    steps:
+    - name: Todo Test Cases
+      run: python manage.py test
+    - name: logging test
+      run: echo "Test Logging Succeeded"
+
